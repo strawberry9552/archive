@@ -74,7 +74,7 @@ span {
   display: block;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 680px) {
   #intro {
     width: 100%;
     height: 100vh;
