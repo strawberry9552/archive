@@ -266,12 +266,34 @@
 .direc .direcLeft {
   width: 40%;
   height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+.direc .direcLeft.fill {
+  background-color: rgba(13, 13, 13, 0.5);
+}
+.direc #gallery {
+  width: 90%;
+  height: 100%;
+}
+.direc #gallery li {
+  width: 100%;
+  aspect-ratio: 2/3;
+}
+
+.simply-scroll-clip {
+  height: 90vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 .direc .direcRight {
   width: 60%;
   height: 100vh;
   background-color: #fff;
 }
+
 .direc .menu > li {
   width: 100%;
   height: calc(95vh / 5);
