@@ -36,6 +36,7 @@
 #left .nav {
   font-family: "Zalando Sans Expanded", sans-serif;
   font-weight: 700;
+  font-size: 1.5vh;
   display: flex;
   /* flex-direction: column; */
   position: absolute;
@@ -138,6 +139,21 @@
   background-repeat: no-repeat;
 }
 
+.topContact {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 102;
+}
+.topContact p {
+  white-space: nowrap;
+  text-align: right;
+  font-size: 1.2em;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-weight: 600;
+  margin: 0.5rem 3rem 1rem;
+}
+
 .profile .box1 {
   width: 100%;
   height: 90%;
@@ -172,43 +188,44 @@
   width: 100%;
   height: 100%;
 }
-.profile .topContact {
-  text-align: right;
-  font-size: 1.2em;
-  font-family: "Zalando Sans Expanded", sans-serif;
-  font-weight: 600;
-  margin: 0.5rem 2rem;
-}
-.profile .profileWrap {
-  width: 100%;
-}
+
 .profile h2 {
   font-size: 3em;
 }
 .profile h3 {
   font-size: 2.5em;
+  margin-bottom: 1rem;
 }
 .profile .pfPic {
   width: 150px;
 }
 .profile ul {
   display: flex;
-  margin-top: 2rem;
+  justify-content: flex-end;
+  margin: 2rem 3rem;
   gap: 2rem;
 }
-.profile ul > li {
-  width: 50%;
-}
+
 .profile .name_job {
   text-align: right;
 }
 .profile .name_job .job {
   font-size: 1.5em;
 }
+.career li,
+.works li {
+  width: calc(100% / 2);
+}
+.works .toolsIcon {
+  display: flex;
+  gap: 0.5em;
+}
+
 .profile .textSlide {
   width: 100%;
   height: 10%;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   white-space: nowrap;
   overflow: hidden;
   color: #fff;
@@ -220,10 +237,14 @@
 }
 .profile .textSlide .icon {
   color: #f6f6f8;
+  display: inline-block;
+  margin-right: 1rem;
 }
 .profile .textSlide p {
+  display: inline-block;
   color: #ad0e0f;
   font-weight: 600;
+  margin-bottom: 0.5rem;
   animation: move 20s infinite linear;
 }
 
@@ -233,5 +254,64 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* directory 영역 */
+
+.direc {
+  width: 100%;
+  display: flex;
+}
+.direc .direcLeft {
+  width: 40%;
+  height: 100vh;
+}
+.direc .direcRight {
+  width: 60%;
+  height: 100vh;
+  background-color: #fff;
+}
+.direc .menu > li {
+  width: 100%;
+  height: calc(95vh / 5);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3em;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-weight: 900;
+  padding: 0 2rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.direc .menu > li.on {
+  color: #e90001;
+  background-color: #0d0d0d;
+}
+.direc .menu > li .hoverArrow {
+  display: none;
+}
+
+.direc .menu > li.on .hoverArrow {
+  display: block;
+}
+.direc .menu > li.on p:first-child {
+  display: none;
+}
+
+.direc .menu > li.on .hoverArrow img {
+  display: block;
+  object-fit: cover;
+  animation: move2 1s infinite;
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(1rem);
   }
 }
