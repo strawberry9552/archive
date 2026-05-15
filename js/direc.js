@@ -1,8 +1,13 @@
 $(function () {
-  let menu = document.querySelector(".menu");
-  let list = document.querySelectorAll(".menu > li");
-
-  list.addEventlistener("click", (e) => {
-    list.classList.add("on");
+  $(".menu li").on("click", function () {
+    $(".menu li").removeClass("on");
+    $(this).addClass("on");
+  });
+  $(".menu li").on("mouseenter", function () {
+    $(".menu li").removeClass("hover");
+    $(this).addClass("hover");
+  });
+  $(".menu li").on("mouseleave", function () {
+    $(".menu li").removeClass("hover");
   });
 });

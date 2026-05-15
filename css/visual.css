@@ -286,6 +286,10 @@
   cursor: pointer;
 }
 
+.direc .menu > li.hover {
+  color: #fff;
+  background-color: #0d0d0d;
+}
 .direc .menu > li.on {
   color: #e90001;
   background-color: #0d0d0d;
@@ -293,20 +297,15 @@
 .direc .menu > li .hoverArrow {
   display: none;
 }
-
 .direc .menu > li.on .hoverArrow {
   display: block;
-}
-.direc .menu > li.on p:first-child {
-  display: none;
 }
 
 .direc .menu > li.on .hoverArrow img {
   display: block;
   object-fit: cover;
-  animation: move2 1s infinite;
+  animation: move2 1s forwards;
 }
-
 @keyframes move2 {
   0% {
     transform: translateX(0);
@@ -314,4 +313,10 @@
   30% {
     transform: translateX(1rem);
   }
+  100% {
+    transform: translateX(1rem);
+  }
+}
+.direc .menu > li.on p:first-child {
+  display: none;
 }
