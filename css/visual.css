@@ -269,19 +269,16 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-right: 2rem;
 }
-.direc .direcLeft.fill {
-  background-color: rgba(13, 13, 13, 0.5);
-}
-.direc #gallery {
-  width: 90%;
+.direc .gallery {
+  width: 80%;
   height: 100%;
 }
-.direc #gallery li {
+.direc .gallery li {
   width: 100%;
   aspect-ratio: 2/3;
 }
-
 .simply-scroll-clip {
   height: 90vh;
   overflow: hidden;

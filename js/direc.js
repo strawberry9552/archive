@@ -10,13 +10,4 @@ $(function () {
   $(".menu li").on("mouseleave", function () {
     $(".menu li").removeClass("hover");
   });
-
-  // $(".direcLeft").on("mouseenter", function () {
-  //   $(this).addClass("fill");
-  // });
-
-  $("#gallery").simplyScroll({
-    orientation: "vertical",
-    speed: 0.5,
-  });
 });
