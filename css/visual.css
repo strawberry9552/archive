@@ -269,15 +269,15 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 2rem;
 }
-.direc .gallery {
+.direc .leftSlide {
   width: 80%;
   height: 100%;
 }
-.direc .gallery li {
+.direc .leftSlide li {
   width: 100%;
-  aspect-ratio: 2/3;
+  height: auto;
+  margin-bottom: 1rem;
 }
 .simply-scroll-clip {
   height: 90vh;

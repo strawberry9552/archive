@@ -10,4 +10,9 @@ $(function () {
   $(".menu li").on("mouseleave", function () {
     $(".menu li").removeClass("hover");
   });
+
+  $(".leftSlide").simplyScroll({
+    orientation: "vertical",
+    speed: 0.5,
+  });
 });
