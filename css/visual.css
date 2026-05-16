@@ -176,9 +176,15 @@
 .profile .box1_left img {
   position: absolute;
   z-index: 101;
+<<<<<<< HEAD
   width: 80%;
   left: 15%;
   top: 50%;
+=======
+  width: 100%;
+  left: 10%;
+  top: 40%;
+>>>>>>> b58dea6 (260516 업뎃)
   transform: translateY(-50%);
 }
 
@@ -256,6 +262,7 @@
     transform: translateX(-50%);
   }
 }
+<<<<<<< HEAD
 
 /* directory 영역 */
 
@@ -339,3 +346,5 @@
 .direc .menu > li.on p:first-child {
   display: none;
 }
+=======
+>>>>>>> b58dea6 (260516 업뎃)
