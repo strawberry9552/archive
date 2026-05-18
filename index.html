@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Archive</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/intro.css" />
+  </head>
+  <body>
+    <div id="intro">
+      <div class="introVid">
+        <video src="img/container_vid.mp4" autoplay loop muted></video>
+      </div>
+      <ul>
+        <li class="loadingText"><span>Loading</span></li>
+        <li class="loading"><div class="loadFill"></div></li>
+      </ul>
+    </div>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          location.href = "main.html";
+        }, 5500);
+      });
+    </script>
+  </body>
+</html>
