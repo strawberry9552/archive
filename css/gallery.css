@@ -8,11 +8,22 @@
   width: 40%;
   height: 100vh;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82c0ec7c0e11a7ba9c291bdd9cc63249131cb2de
+>>>>>>> 13560817eaa031fb72a5fa702c836b1b06e9cf4b
 .direc .pre {
   width: 80%;
   display: none;
   margin: 0 auto;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 13560817eaa031fb72a5fa702c836b1b06e9cf4b
 .direc .pre .more {
   width: 35%;
   height: 100%;
@@ -39,6 +50,11 @@
 .direc .pre.fill .more {
   display: block;
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 82c0ec7c0e11a7ba9c291bdd9cc63249131cb2de
+>>>>>>> 13560817eaa031fb72a5fa702c836b1b06e9cf4b
 .direc .pre.on {
   width: 80%;
   display: block;
@@ -58,7 +74,14 @@
 .direc .direcLeft li {
   width: 100%;
   height: auto;
+<<<<<<< HEAD
   margin-bottom: 2rem;
+=======
+<<<<<<< HEAD
+  margin-bottom: 2rem;
+=======
+>>>>>>> 82c0ec7c0e11a7ba9c291bdd9cc63249131cb2de
+>>>>>>> 13560817eaa031fb72a5fa702c836b1b06e9cf4b
 }
 
 .simply-scroll-clip {
@@ -75,7 +98,15 @@
 
 .direc .menu > li {
   width: 100%;
+<<<<<<< HEAD
   height: calc(97vh / 5);
+=======
+<<<<<<< HEAD
+  height: calc(97vh / 5);
+=======
+  height: calc(95vh / 5);
+>>>>>>> 82c0ec7c0e11a7ba9c291bdd9cc63249131cb2de
+>>>>>>> 13560817eaa031fb72a5fa702c836b1b06e9cf4b
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
