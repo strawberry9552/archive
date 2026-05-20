@@ -1,7 +1,7 @@
 $(function () {
   let stw = gsap.utils.toArray(".rightBox li");
   gsap.to(stw, {
-    yPercent: 80 * (stw.length - 8),
+    yPercent: 100 * (stw.length - 8),
 
     scrollTrigger: {
       trigger: ".artwork",

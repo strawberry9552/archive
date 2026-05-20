@@ -79,7 +79,7 @@
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 3em;
+  font-size: 3vw;
   font-family: "Zalando Sans Expanded", sans-serif;
   font-weight: 900;
   padding: 0 2rem;
@@ -97,6 +97,7 @@
 }
 .direc .menu > li .hoverArrow {
   display: none;
+  width: 3vw;
 }
 .direc .menu > li.on .hoverArrow {
   display: block;
