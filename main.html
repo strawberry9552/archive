@@ -67,7 +67,7 @@
     </div>
 
     <div id="container">
-      <section class="profile">
+      <section id="profile" class="profile">
         <div class="box1">
           <div class="box1_left">
             <img src="img/container_move.gif" alt="" />
@@ -101,6 +101,7 @@
                 </li>
                 <li>
                   <h3>Experience</h3>
+                  <p>25.12 ~ 26.05 MBC아카데미 웹디자인 교육 과정 수료</p>
                   <p>22.11 ~ 25.09 비엔지센터 웹디자이너</p>
                   <p>21.11 ~ 22.01 유니콘랜드 라이브커머스 콘텐츠 제작 지원</p>
                   <p>20.09 ~ 21.09 이피엔스 라이브커머스 콘텐츠 제작 지원</p>
@@ -109,21 +110,41 @@
               </ul>
               <ul class="works">
                 <li>
-                  <h3>Tools</h3>
+                  <h3>Skills</h3>
                   <div class="toolsIcon">
                     <p><img src="img/tools/ps.png" alt="" /></p>
                     <p><img src="img/tools/ai.png" alt="" /></p>
                     <p><img src="img/tools/fi.png" alt="" /></p>
                     <p><img src="img/tools/pr.png" alt="" /></p>
+                    <p><img src="img/tools/ae.png" alt="" /></p>
                     <p><img src="img/tools/bl.png" alt="" /></p>
-                    <p><img src="img/tools/vs.png" alt="" /></p>
+                    <p><img src="img/tools/html.png" alt="" /></p>
+                    <p><img src="img/tools/css.png" alt="" /></p>
+                    <p><img src="img/tools/js.png" alt="" /></p>
+                  </div>
+                  <div class="designSkill">
+                    <span>Design</span>
+                    <p>이벤트 및 프로모션 페이지 제작 (상세페이지, 배너 등)</p>
+                    <p>피그마 프로토타입 및 컴포넌트 활용한 UI/UX 제작</p>
+                    <p>일러스트, 블렌더 활용한 3D 오브젝트 제작</p>
+                    <p></p>
+                  </div>
+                  <div class="codingSkill">
+                    <span>Coding</span>
+                    <p>간단한 홈페이지 제작 및 유지보수</p>
+                    <p>제이쿼리, GSAP 활용 가능</p>
                   </div>
                 </li>
                 <li>
-                  <h3>Skills</h3>
-                  <p>웹디자인기능사</p>
-                  <p>컴퓨터그래픽스운용기능사</p>
-                  <p>GTQ 1급</p>
+                  <div>
+                    <h3>Other</h3>
+                    <div>
+                      <span>Generative AI</span>
+                      <p>생성형 AI를 활용한 디자인 및 영상편집</p>
+                    </div>
+                    <span>Camera : R6 Mark II</span>
+                    <p>사진 촬영 및 보정</p>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -159,7 +180,14 @@
             </ul>
           </div>
           <div class="pre">
-            <div class="more"><button class="moreBtn">More</button></div>
+            <div class="more">
+              <button
+                class="moreBtn"
+                onclick="location.href = 'portfolio/02.html'"
+              >
+                More
+              </button>
+            </div>
             <ul class="leftSlide">
               <li><img src="img/direc/web01_thumb.png" alt="" /></li>
               <li><img src="img/direc/web02_thumb.png" alt="" /></li>
@@ -174,11 +202,17 @@
             </ul>
           </div>
           <div class="pre">
+            <div class="more">
+              <button
+                class="moreBtn"
+                onclick="location.href = 'portfolio/04.html'"
+              >
+                More
+              </button>
+            </div>
             <ul class="leftSlide">
-              <li><img src="img/direc/artwork01.png" alt="" /></li>
-              <li><img src="img/direc/artwork02.png" alt="" /></li>
-              <li><img src="img/direc/artwork03.png" alt="" /></li>
-              <li><img src="img/direc/artwork05.png" alt="" /></li>
+              <li><img src="img/coding/hoban.png" alt="" /></li>
+              <li><img src="img/coding/numgame.png" alt="" /></li>
             </ul>
           </div>
           <div class="pre">
@@ -195,33 +229,33 @@
             <p>E-mail : natsu93@naver.com | Instagram : morningchik | @SEOUL</p>
           </div>
           <ul class="menu">
-            <li class="on">
+            <li id="graphic" class="on">
               <p>01</p>
               <p class="hoverArrow">
                 <img src="img/left_arrow_r.png" alt="" />
               </p>
-              <p>ARTWORK |</p>
+              <p>ARTWORK</p>
             </li>
-            <li>
+            <li id="project">
               <p>02</p>
               <p class="hoverArrow">
                 <img src="img/left_arrow_r.png" alt="" />
               </p>
-              <p>WEB DESIGN | UI/UX</p>
+              <p>WEB DESIGN & UX/UI</p>
             </li>
             <li>
               <p>03</p>
               <p class="hoverArrow">
                 <img src="img/left_arrow_r.png" alt="" />
               </p>
-              <p>3D | VIDEO EDIT</p>
+              <p>OTHER CONTENTS</p>
             </li>
             <li>
               <p>04</p>
               <p class="hoverArrow">
                 <img src="img/left_arrow_r.png" alt="" />
               </p>
-              <p>TEAM PROJECT</p>
+              <p>CODING</p>
             </li>
             <li class="lastMenu">
               <p>05</p>
@@ -233,7 +267,7 @@
           </ul>
         </div>
       </section>
-      <section class="backup">
+      <section id="backup" class="backup">
         <h2><p>~2025 Archive</p></h2>
         <div class="history">
           <ul class="thumbList">
@@ -268,7 +302,7 @@
           </ul>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <h2>
           <p>Work <span class="red">Arc</span>hive</p>
         </h2>

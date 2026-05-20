@@ -15,11 +15,7 @@ $(function () {
   });
 
   $(".textSlide").on("click", function () {
-<<<<<<< HEAD
     // let s = $(this).index();
-=======
-    let s = $(this).index();
->>>>>>> 82c0ec7c0e11a7ba9c291bdd9cc63249131cb2de
     let dir = $(".direc").offset().top;
     $("html, body").stop().animate({ scrollTop: dir });
   });

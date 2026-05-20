@@ -8,16 +8,11 @@
   width: 40%;
   height: 100vh;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 82c0ec7c0e11a7ba9c291bdd9cc63249131cb2de
 .direc .pre {
   width: 80%;
   display: none;
   margin: 0 auto;
 }
-<<<<<<< HEAD
 .direc .pre .more {
   width: 35%;
   height: 100%;
@@ -44,8 +39,6 @@
 .direc .pre.fill .more {
   display: block;
 }
-=======
->>>>>>> 82c0ec7c0e11a7ba9c291bdd9cc63249131cb2de
 .direc .pre.on {
   width: 80%;
   display: block;
@@ -65,10 +58,7 @@
 .direc .direcLeft li {
   width: 100%;
   height: auto;
-<<<<<<< HEAD
   margin-bottom: 2rem;
-=======
->>>>>>> 82c0ec7c0e11a7ba9c291bdd9cc63249131cb2de
 }
 
 .simply-scroll-clip {
@@ -85,15 +75,11 @@
 
 .direc .menu > li {
   width: 100%;
-<<<<<<< HEAD
   height: calc(97vh / 5);
-=======
-  height: calc(95vh / 5);
->>>>>>> 82c0ec7c0e11a7ba9c291bdd9cc63249131cb2de
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 3em;
+  font-size: 3vw;
   font-family: "Zalando Sans Expanded", sans-serif;
   font-weight: 900;
   padding: 0 2rem;
@@ -111,6 +97,7 @@
 }
 .direc .menu > li .hoverArrow {
   display: none;
+  width: 3vw;
 }
 .direc .menu > li.on .hoverArrow {
   display: block;
