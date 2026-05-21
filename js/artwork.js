@@ -1,7 +1,9 @@
 $(function () {
-  let stw = gsap.utils.toArray(".rightBox li");
-  gsap.to(stw, {
-    yPercent: 100 * (stw.length - 8),
+  let artwork = document.querySelector(".artwork");
+  let rb = document.querySelector(".rightBox ul");
+
+  gsap.to(rb, {
+    y: () => -(rb.scrollHeight - artwork.offsetHeight),
 
     scrollTrigger: {
       trigger: ".artwork",
@@ -9,6 +11,7 @@ $(function () {
       end: "+=2000",
       scrub: 2,
       pin: true,
+      invalidateOnRefresh: true,
     },
   });
 
