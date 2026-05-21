@@ -32,7 +32,6 @@ $(function () {
       end: "+=3000",
       scrub: 3, //scrub은 스크롤의 길이에 따라 움직임이 조절됨.
       pin: true,
-      markers: true,
     },
   });
   for (let i = 2; i <= 4; i++) {
