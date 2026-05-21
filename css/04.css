@@ -116,13 +116,14 @@
   font-size: 1.5vw;
 }
 .rightBox .designBox {
-  height: 90%;
+  height: 85%;
 }
 .designBox li {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 90%;
   display: flex;
+  justify-content: flex-end;
   /* gap: 1rem; */
   overflow: hidden;
 }
@@ -131,19 +132,6 @@
   border-radius: 30px;
   background-color: #fff;
   overflow: hidden;
-}
-.designBox .mver {
-  height: 100%;
-  border-radius: 30px;
-  background-color: #fff;
-  overflow: hidden;
-}
-.designBox .app {
-  height: 100%;
-  border-radius: 30px;
-  background-color: #fff;
-  overflow: hidden;
-  /* padding: 0.5rem; */
 }
 .designBox img {
   width: 100%;
