@@ -1,0 +1,437 @@
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  /* 왼쪽 (카테고리) 섹션 */
+  #left {
+    width: 80px;
+    height: 95%;
+    background-color: #fff;
+    padding: auto 0.5rem;
+    border-radius: 1rem;
+    position: fixed;
+    z-index: 999;
+    margin: 1rem;
+    margin-right: 2rem;
+    flex-shrink: 0;
+    padding: 1rem;
+  }
+  #left .logo {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #left h1 {
+    width: 100%;
+  }
+  #left .nav {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 700;
+    font-size: 1.5vh;
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-direction: column; */
+    position: absolute;
+    rotate: -90deg;
+    color: #0d0d0d;
+    width: 100%;
+    top: 30%;
+    left: 0;
+  }
+  #left .nav > li {
+    padding-left: 0.5rem;
+    text-align: center;
+  }
+
+  #left .nav > li::before {
+    content: "|";
+    color: #ccc;
+    font-weight: 100;
+    margin-right: 0.5rem;
+  }
+  #left .nav > li:last-child::before {
+    display: none;
+  }
+  #left .nav > li.on {
+    color: #e90001;
+  }
+
+  /* 오른쪽 섹션 */
+
+  #right {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #right > div {
+    width: 100%;
+  }
+  #right .title {
+    height: 50%;
+    overflow: hidden;
+  }
+  #right .circleArrow {
+    width: 500px;
+    display: flex;
+  }
+  #right .circleArrow > li {
+    width: calc(100% / 3);
+    padding: 1rem;
+  }
+
+  #right .bottomArea {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #right .subTitle {
+    text-align: right;
+    font-size: 2em;
+  }
+
+  /* 아래 화살표 */
+  .downArrow {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  .downArrow .dw {
+    width: 50px;
+    animation: down 1.5s infinite;
+    cursor: pointer;
+  }
+  @keyframes down {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 1%;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  /* 섹션 스타일 */
+
+  #container section {
+    height: 100vh;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .topContact {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 102;
+  }
+  .topContact p {
+    white-space: nowrap;
+    text-align: right;
+    font-size: 1.2em;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 600;
+    margin: 0.5rem 3rem 1rem;
+  }
+
+  .profile .box1 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+  }
+  .profile .box1 > div {
+    width: calc(100% / 2);
+  }
+  .profile .box1_left {
+    position: relative;
+  }
+  .profile .box1_left::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 20%;
+    height: 100%;
+    right: 0;
+  }
+  .profile .box1_left img {
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    left: 10%;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  /* 오른쪽 박스 */
+  .profile .box1_right {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+
+  .profile h2 {
+    font-size: 3vw;
+  }
+  .profile h3 {
+    font-size: 2.5vw;
+    margin-bottom: 1rem;
+  }
+  .profile .pfPic {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+  .profile .pfPic img {
+    width: 100%;
+  }
+  .profile .idCard {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem 3rem;
+    gap: 2rem;
+  }
+  .profile .name_job {
+    text-align: right;
+  }
+  .profile .name_job .job {
+    font-size: 1.5vw;
+  }
+  .profile .infoTxt {
+    font-size: 2vh;
+  }
+  .career,
+  .works {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-size: 1.8vh;
+  }
+  .works div {
+    margin-bottom: 1rem;
+  }
+  .career li:nth-child(2) {
+    width: 60%;
+  }
+
+  .works li:nth-child(2) {
+    width: 50%;
+  }
+  .works .toolsIcon {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 2rem;
+  }
+  .works span {
+    font-weight: 700;
+  }
+  .profile .textSlide {
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    font-size: 3.5em;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    position: relative;
+    background-color: #0d0d0d;
+    cursor: pointer;
+  }
+  .profile .textSlide .icon {
+    color: #f6f6f8;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  .profile .textSlide p {
+    display: inline-block;
+    color: #ad0e0f;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    animation: move 20s infinite linear;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* history 영역 */
+  .backup {
+    width: 100%;
+    padding-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+  }
+  .backup h2 {
+    width: 100%;
+    height: 15vh;
+    line-height: 20vh;
+    font-size: 7vw;
+  }
+  .backup h2 > p {
+    display: inline-block;
+  }
+  .backup h4 {
+    font-size: 2vw;
+    word-break: keep-all;
+  }
+  .backup .history {
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+  }
+  .backup .thumbList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .backup .thumbList li {
+    width: 20%;
+    flex-shrink: 0;
+  }
+
+  /* contact 영역 */
+  #container .contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 10rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .contact h2 {
+    width: 80%;
+    height: 15vh;
+    line-height: 20vh;
+    font-size: 7vw;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  .contact span.red {
+    color: #e90001;
+  }
+  .contact .contactWrap {
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contact .contactTit {
+    border-bottom: 1px solid #c8c8c8;
+    padding: 1rem 0;
+  }
+  .contact h3 {
+    font-size: 6vh;
+  }
+  .contact .contactWrap p {
+    font-family: "Zalando Sans Expanded", "pretendard", sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .contact .formArea {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 1rem 0;
+  }
+  .contact .formArea li {
+    width: 45%;
+  }
+  .contact .formArea li:nth-child(3),
+  .contact .formArea li:nth-child(4) {
+    width: 91%;
+  }
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    border: 1px solid #6b6b6b;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.2em;
+    font-family: "pretendard", sans-serif;
+  }
+  .contact textarea {
+    height: 20vh;
+  }
+  .contact button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: "Paperlogy";
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 0px;
+    font-weight: 700;
+  }
+  .contact button:active {
+    background-color: #ad0e0f;
+    color: #fff;
+  }
+
+  .contact .SNSList {
+    display: flex;
+    font-size: 3vh;
+    font-weight: 600;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 1024px) {
+  #left,
+  #right,
+  #container {
+    display: none;
+  }
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobileNotice {
+    color: #e90001;
+  }
+}

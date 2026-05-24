@@ -1,0 +1,124 @@
+/* directory 영역 */
+
+.direc {
+  width: 100%;
+  display: flex;
+}
+.direc .direcLeft {
+  width: 40%;
+  height: 100vh;
+}
+.direc .pre {
+  width: 80%;
+  display: none;
+  margin: 0 auto;
+}
+.direc .pre .more {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  z-index: 500;
+  background-color: rgba(13, 13, 13, 0.45);
+  display: none;
+}
+.direc .pre .more > button {
+  z-index: 501;
+  display: inline-block;
+  color: #fff;
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-family: "Zalando Sans Expanded", "pretendard", sans-serif;
+  font-weight: 700;
+  font-size: 5vw;
+}
+.direc .pre.fill .more {
+  display: block;
+}
+.direc .pre.on {
+  width: 80%;
+  display: block;
+}
+.direc .direcLeft ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.direc .direcLeft ul.on {
+  display: block;
+}
+.direc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.direc .direcLeft li {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.simply-scroll-clip {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.direc .direcRight {
+  width: 60%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.direc .menu > li {
+  width: 100%;
+  height: calc(97vh / 5);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3vw;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-weight: 900;
+  padding: 0 2rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.direc .menu > li.hover {
+  color: #fff;
+  background-color: #0d0d0d;
+}
+.direc .menu > li.on {
+  color: #e90001;
+  background-color: #0d0d0d;
+}
+.direc .menu > li .hoverArrow {
+  display: none;
+  width: 3vw;
+}
+.direc .menu > li.on .hoverArrow {
+  display: block;
+}
+
+.direc .menu > li.on .hoverArrow img {
+  display: block;
+  object-fit: cover;
+  animation: move2 1s forwards;
+}
+@keyframes move2 {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(1rem);
+  }
+}
+.direc .menu > li.on p:first-child {
+  display: none;
+}
