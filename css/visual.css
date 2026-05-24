@@ -419,6 +419,9 @@
     justify-content: space-between;
     padding: 1rem 0;
   }
+  .mobileNotice {
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
   #left,
